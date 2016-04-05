@@ -39,7 +39,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Poets\Poet.cs" />
+    <Compile Include="Poets\Queries\PoetSearchQuery.cs" />
+    <Compile Include="Poets\Requests\CreateTemporaryPoetRequest.cs" />
+    <Compile Include="Poets\Requests\CreatePoetRequest.cs" />
+    <Compile Include="Poets\Requests\EditPoetRequest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Search\SearchQuery.cs" />
+    <Compile Include="Search\SearchResult.cs" />
+    <Compile Include="Search\TextSearchQuery.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

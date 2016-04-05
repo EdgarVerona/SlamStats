@@ -8,5 +8,6 @@
     [DateCreated] DATETIME2 NOT NULL, 
     [DateClaimed] DATETIME2 NULL, 
     [ClaimedByPoetId] BIGINT NULL, 
-    [FeatureDescription] NVARCHAR(MAX) NULL
+    [FeatureDescription] NVARCHAR(MAX) NULL, 
+    [Email] NVARCHAR(100) NULL
 )

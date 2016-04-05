@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.40629.0
+VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SlamStats.Engine", "Engine\SlamStats.Engine\SlamStats.Engine.csproj", "{E8C85A2B-2464-4C0A-9FC5-9331633452EF}"
 EndProject
@@ -20,6 +20,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{B2F41305-9EC8-4EFE-838C-C4996E6A56A1}"
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "SlamStats.Database", "Database\SlamStats.Database\SlamStats.Database.sqlproj", "{E70767A8-F025-44B7-9884-228653F41E64}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqlMetadataBuilder", "Database\SqlMetadataBuilder\SqlMetadataBuilder.csproj", "{DD5C7D17-7C61-45B7-9BCA-BFEF2D34DD52}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +43,10 @@ Global
 		{E70767A8-F025-44B7-9884-228653F41E64}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E70767A8-F025-44B7-9884-228653F41E64}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E70767A8-F025-44B7-9884-228653F41E64}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{DD5C7D17-7C61-45B7-9BCA-BFEF2D34DD52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD5C7D17-7C61-45B7-9BCA-BFEF2D34DD52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD5C7D17-7C61-45B7-9BCA-BFEF2D34DD52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD5C7D17-7C61-45B7-9BCA-BFEF2D34DD52}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -49,5 +55,6 @@ Global
 		{E8C85A2B-2464-4C0A-9FC5-9331633452EF} = {0814A341-F6F2-45B3-83B4-E037122672F0}
 		{9DC4939F-0FCE-4E8F-B0F7-D11B69EDDEEB} = {06967165-DCB9-4F77-BEB9-7E03927A9CE7}
 		{E70767A8-F025-44B7-9884-228653F41E64} = {B2F41305-9EC8-4EFE-838C-C4996E6A56A1}
+		{DD5C7D17-7C61-45B7-9BCA-BFEF2D34DD52} = {B2F41305-9EC8-4EFE-838C-C4996E6A56A1}
 	EndGlobalSection
 EndGlobal
