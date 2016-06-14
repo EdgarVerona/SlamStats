@@ -8,7 +8,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
     <ProjectGuid>{e70767a8-f025-44b7-9884-228653f41e64}</ProjectGuid>
-    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql120DatabaseSchemaProvider</DSP>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql110DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
     <RootPath>
     </RootPath>
@@ -63,6 +63,7 @@
     <Folder Include="StoredProcedures\Slams" />
     <Folder Include="StoredProcedures\Bouts" />
     <Folder Include="Notes" />
+    <Folder Include="Publish\" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Tables\Slams.sql" />
@@ -91,5 +92,8 @@
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="SlamStats.Database.refactorlog" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Publish\SlamStats.Database.publish.xml" />
   </ItemGroup>
 </Project>

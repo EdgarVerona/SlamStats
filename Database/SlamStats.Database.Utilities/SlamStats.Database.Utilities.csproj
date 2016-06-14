@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{DD5C7D17-7C61-45B7-9BCA-BFEF2D34DD52}</ProjectGuid>
+    <ProjectGuid>{B4D2288D-1212-4FD9-BCE5-A14876CA9242}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SqlMetadataBuilder</RootNamespace>
-    <AssemblyName>SqlMetadataBuilder</AssemblyName>
+    <RootNamespace>SlamStats.Database.Utilities</RootNamespace>
+    <AssemblyName>SlamStats.Database.Utilities</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -39,15 +39,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MetadataBuilder.cs" />
-    <Compile Include="Models\StoredProcedureModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\SlamStats.Database.Utilities\SlamStats.Database.Utilities.csproj">
-      <Project>{b4d2288d-1212-4fd9-bce5-a14876ca9242}</Project>
-      <Name>SlamStats.Database.Utilities</Name>
-    </ProjectReference>
+    <Compile Include="SqlTypeUtility.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

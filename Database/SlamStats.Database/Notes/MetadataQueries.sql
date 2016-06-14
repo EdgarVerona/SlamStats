@@ -6,7 +6,6 @@ SELECT
 	TypeName = ty.name,
 	HasDefaultValue = p.has_default_value,
 	DefaultValue = p.default_value,
-	IsNullable = p.is_nullable,
 	IsOutputParam = p.is_output,
 	IsTableType = ty.is_table_type,
 	IsUserDefined = ty.is_user_defined,
@@ -29,6 +28,6 @@ SELECT
 	UserTypeName = user_type_name
 FROM sys.dm_exec_describe_first_result_set_for_object
 (
-	OBJECT_ID('dbo.GetPoet'),
+	OBJECT_ID('dbo.ClaimPoetTestZZZ'),
 	NULL
 );

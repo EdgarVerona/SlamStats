@@ -13,8 +13,8 @@ BEGIN
 		DECLARE @temporaryPoetIdFound bigint = null;
 
 		SELECT
-			ReviewStatus = @reviewStatus,
-			TemporaryPoetId = @temporaryPoetIdFound
+			@reviewStatus = ReviewStatus,
+			@temporaryPoetIdFound = TemporaryPoetId
 		FROM
 			dbo.ProfileOwnershipRequests
 		WHERE
