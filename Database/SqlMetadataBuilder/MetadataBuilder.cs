@@ -18,11 +18,16 @@ namespace SqlMetadataBuilder
 			{
 				var parameters = GetParameters(conn);
 			}
+
+			// +++
+
+			return null;
 		}
 
-		private Dictionary<string, StoredProcedureProperty> GetParameters(SqlConnection conn)
+		private Dictionary<string, List<StoredProcedureProperty>> GetParameters(SqlConnection conn)
 		{
-			Dictionary<string, List<StoredProcedureProperty>> results = new Dictionary<string, List<StoredProcedureProperty>>();
+			Dictionary<string, List<StoredProcedureProperty>> results = 
+				new Dictionary<string, List<StoredProcedureProperty>>();
 
 			using (SqlCommand command = new SqlCommand())
 			{
@@ -61,9 +66,7 @@ namespace SqlMetadataBuilder
 					bool isUserDefined = reader.GetBoolean(7);
 					int userTypeId = reader.GetInt32(8);
 
-					List<StoredProcedureProperty> props = null;
-
-					if (!results.TryGetValue(procName, out props))
+					if (!results.TryGetValue(procName, out List<StoredProcedureProperty> props))
 					{
 						props = new List<StoredProcedureProperty>();
 						results.Add(procName, props);
